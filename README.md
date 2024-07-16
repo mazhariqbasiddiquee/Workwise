@@ -149,8 +149,28 @@ The base URL for all endpoints related to sellers is https://workwise-8u7l.onren
   {
   "msg": "product updated"
   }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ### DELETE  https://workwise-8u7l.onrender.com/seller/delete/:id
 
+    - **Description**: Delete product details.
+  - **Authentication**: Requires seller authentication.
+  -  Path Parameters:
+   id: ID of the product to update.
+  - **Example**:
+  ```http
+ ### DELETE  https://workwise-8u7l.onrender.com/seller/delete/:id
+  
 
+  Response:
+{
+  "msg": "product deleted"
+}
 
 
 
