@@ -33,3 +33,11 @@ The base URL for all endpoints is https://workwise-8u7l.onrender.com
     "password": "password123",
     "role": "buyer"
   }
+
+   Response:
+  {
+   {
+  "msg": "User created"
+    }
+
+  }
