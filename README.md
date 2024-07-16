@@ -105,8 +105,15 @@ The base URL for all endpoints related to sellers is https://workwise-8u7l.onren
 
 
 
- POST https://workwise-8u7l.onrender.com/seller/add
-Request Body:
+  ### POST https://workwise-8u7l.onrender.com/seller/add
+
+- **Description**: create product in database.
+- **Authentication**: Requires seller authentication.
+
+- **Example**:
+  ```http
+  POST  https://workwise-8u7l.onrender.com/seller/add
+  Request Body:
 {
   "name": "Product Name",
   "category": "Product Category",
@@ -118,4 +125,9 @@ Response:
 {
   "msg": "product created"
 }
+
+
+
+
+
 
