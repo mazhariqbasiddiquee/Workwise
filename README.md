@@ -217,7 +217,6 @@ The base URL for all endpoints related to sellers is https://workwise-8u7l.onren
 
 
 ## Routes
-
 ### GET https://workwise-8u7l.onrender.com/cart/:name
 
 - **Description**: Retrieves all  products from the database of the particular name
@@ -249,5 +248,29 @@ The base URL for all endpoints related to sellers is https://workwise-8u7l.onren
       }
     ]
   }
+
+
+
+POST /cart/addtocart
+Description: Adds a product to the user's cart.
+
+Authentication: Requires buyer authentication.
+
+
+POST https://workwise-8u7l.onrender.com/cart/addtocart
+Request Body:
+{
+  "name": "Product A",
+  "category": "Electronics",
+  "description": "Description of Product A",
+  "price": 500,
+  "discount": 10,
+  "userid": 1
+}
+Response:
+{
+  "msg": "Product added to cart"
+}
+
 
 
