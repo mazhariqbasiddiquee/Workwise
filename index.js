@@ -1,0 +1,21 @@
+const express=require("express")
+const app=express()
+const {sequelize}=require("./module/index")
+const errorHandler=require("./middleware/errhandler")
+const {userRouter}=require("./route/user")
+const {sellerRouter}=require("./route/seller")
+const {cartRouter}=require("./route/cart")
+require('dotenv').config()
+const {auth}=require("./middleware/auth")
+app.use(express.json())
+
+app.use("/user",userRouter)
+app.use(auth)
+app.use("/seller",sellerRouter)
+app.use("/cart",cartRouter)
+app.use(errorHandler)
+
+app.listen(process.env.PORT,async(err)=>{
+    await sequelize.sync()
+    console.log("server is running")
+})
