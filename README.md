@@ -128,6 +128,31 @@ The base URL for all endpoints related to sellers is https://workwise-8u7l.onren
 
 
 
+  ### PATCH  https://workwise-8u7l.onrender.com/seller/update/:id
+
+  - **Description**: Update product details.
+  - **Authentication**: Requires seller authentication.
+  -  Path Parameters:
+   id: ID of the product to update.
+  - **Example**:
+  ```http
+  PATCH  https://workwise-8u7l.onrender.com/seller/update/:id
+  Request Body:
+  {
+  "name": "Product Name",
+  "category": "Product Category",
+  "description": "Description of the product",
+  "price": 100,
+  "discount": 10
+  }
+  Response:
+  {
+  "msg": "product updated"
+  }
+
+
+
+
 
 
 
