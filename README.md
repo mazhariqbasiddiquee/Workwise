@@ -274,3 +274,22 @@ Response:
 
 
 
+DELETE /cart/remove/:id
+Description: Removes a product from the user's cart.
+
+Authentication: Requires buyer authentication.
+
+Parameters:
+
+id: ID of the product to remove from the cart.
+Response: Returns a success message if the product is successfully removed from the cart.
+
+DELETE https://workwise-8u7l.onrender.com/cart/remove/1
+Response:
+{
+  "msg": "product removed from cart"
+}
+
+
+
+
