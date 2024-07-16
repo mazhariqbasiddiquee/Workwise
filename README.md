@@ -44,7 +44,13 @@ The base URL for all endpoints is https://workwise-8u7l.onrender.com
   }
 
 
-  ### POST /api/users/login
+
+
+
+
+
+
+  ### POST https://workwise-8u7l.onrender.com/user/login
 
 - **Description**: Authenticates user credentials and generates JWT token.
 - **Request Body**:
