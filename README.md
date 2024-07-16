@@ -50,24 +50,22 @@ The base URL for all endpoints is https://workwise-8u7l.onrender.com
 
 
 
-  ### POST https://workwise-8u7l.onrender.com/user/login
+### POST https://workwise-8u7l.onrender.com/user/signup
 
-- **Description**: Authenticates user credentials and generates JWT token.
+- **Description**: Creates a new user.
 - **Request Body**:
   ```json
   {
+    "name": "John Doe",
     "email": "john@example.com",
-    "password": "password123"
+    "password": "password123",
+    "role": "buyer"
   }
 
-
- Response:
+   Response:
   {
-  {
-  "msg": "login Successful",
-  "token": "<JWT token>"
-}
-
+   {
+  "msg": "User created"
+    }
 
   }
-
