@@ -22,7 +22,7 @@ The base URL for all endpoints is https://workwise-8u7l.onrender.com
 
 
 
-### POST /api/users/signup
+### POST https://workwise-8u7l.onrender.com/user/signup
 
 - **Description**: Creates a new user.
 - **Request Body**:
