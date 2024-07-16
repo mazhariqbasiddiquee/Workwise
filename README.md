@@ -66,5 +66,41 @@ The base URL for all endpoints is https://workwise-8u7l.onrender.com
 
 
 
+# Seller API
+
+The base URL for all endpoints related to sellers is https://workwise-8u7l.onrender.com/seller.
+
+## Routes
+
+### GET https://workwise-8u7l.onrender.com/seller
+
+- **Description**: Retrieves all seller products from the database.
+- **Authentication**: Requires seller authentication.
+- **Response**: Returns a JSON array of seller product objects.
+- **Example**:
+  ```http
+  GET https://workwise-8u7l.onrender.com/seller
+  Response:
+  {
+    "msg": [
+      {
+        "id": 1,
+        "name": "Product A",
+        "category": "Electronics",
+        "description": "Description of Product A",
+        "price": 500,
+        "discount": 10
+      },
+      {
+        "id": 2,
+        "name": "Product B",
+        "category": "Clothing",
+        "description": "Description of Product B",
+        "price": 200,
+        "discount": 5
+      }
+    ]
+  }
+
 
 
