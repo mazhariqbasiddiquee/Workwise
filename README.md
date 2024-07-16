@@ -4,6 +4,7 @@ The base URL for all endpoints is https://workwise-8u7l.onrender.com
 
 ## Routes
 
+
 ### GET /api/users
 
 - **Description**: Retrieves all users from the database.
@@ -41,3 +42,21 @@ The base URL for all endpoints is https://workwise-8u7l.onrender.com
     }
 
   }
+
+
+  ### POST /api/users/login
+
+- **Description**: Authenticates user credentials and generates JWT token.
+- **Request Body**:
+  ```json
+  {
+    "email": "john@example.com",
+    "password": "password123"
+  }
+
+
+{
+  "msg": "login Successful",
+  "token": "<JWT token>"
+}
+
