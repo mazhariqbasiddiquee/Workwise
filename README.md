@@ -2,8 +2,8 @@
 
 The base URL for all endpoints is https://workwise-8u7l.onrender.com
 
-Routes
-GET /api/users
+#Routes
+#GET /api/users
 Description: Retrieves all users from the database.
 Response: Returns a JSON array of user objects.
 Example:
