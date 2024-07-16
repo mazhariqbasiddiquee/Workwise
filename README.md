@@ -55,8 +55,13 @@ The base URL for all endpoints is https://workwise-8u7l.onrender.com
   }
 
 
-{
+ Response:
+  {
+  {
   "msg": "login Successful",
   "token": "<JWT token>"
 }
+
+
+  }
 
