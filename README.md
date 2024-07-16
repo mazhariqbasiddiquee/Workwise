@@ -133,7 +133,7 @@ The base URL for all endpoints related to sellers is https://workwise-8u7l.onren
   - **Description**: Update product details.
   - **Authentication**: Requires seller authentication.
   -  Path Parameters:
-   id: ID of the product to update.
+   id: id of the product to update.
   - **Example**:
   ```http
   PATCH  https://workwise-8u7l.onrender.com/seller/update/:id
@@ -174,5 +174,80 @@ The base URL for all endpoints related to sellers is https://workwise-8u7l.onren
 
 
 
+
+
+# Cart API
+
+The base URL for all endpoints related to sellers is https://workwise-8u7l.onrender.com/Cart.
+
+## Routes
+
+### GET https://workwise-8u7l.onrender.com/cart
+
+- **Description**: Retrieves all  products from the database.
+- **Authentication**: Requires  authentication  and role should be buyer
+- **Response**: Returns a JSON array of seller product objects.
+- **Example**:
+  ```http
+  GET https://workwise-8u7l.onrender.com/cart
+  Response:
+  {
+    "msg": [
+      {
+        "id": 1,
+        "name": "Product A",
+        "category": "Electronics",
+        "description": "Description of Product A",
+        "price": 500,
+        "discount": 10
+      },
+      {
+        "id": 2,
+        "name": "Product B",
+        "category": "Clothing",
+        "description": "Description of Product B",
+        "price": 200,
+        "discount": 5
+      }
+    ]
+  }
+
+
+
+
+
+## Routes
+
+### GET https://workwise-8u7l.onrender.com/cart/:name
+
+- **Description**: Retrieves all  products from the database of the particular name
+- **Authentication**: Requires  authentication  and role should be buyer
+-  Path Parameters:
+   name: name of the product to update.
+- **Response**: Returns a JSON array of seller product objects.
+- **Example**:
+  ```http
+  GET https://workwise-8u7l.onrender.com/cart/:name
+  Response:
+  {
+    "msg": [
+      {
+        "id": 1,
+        "name": "Product A",
+        "category": "Electronics",
+        "description": "Description of Product A",
+        "price": 500,
+        "discount": 10
+      },
+      {
+        "id": 2,
+        "name": "Product B",
+        "category": "Clothing",
+        "description": "Description of Product B",
+        "price": 200,
+        "discount": 5
+      }
+    ]
+  }
 
 
