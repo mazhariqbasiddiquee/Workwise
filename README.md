@@ -184,7 +184,7 @@ The base URL for all endpoints related to sellers is https://workwise-8u7l.onren
 
 ### GET https://workwise-8u7l.onrender.com/cart
 
-- **Description**: Retrieves all  products from the database.
+- **Description**: Retrieves all  products from the cart of the particular user
 - **Authentication**: Requires  authentication  and role should be buyer
 - **Response**: Returns a JSON array of seller product objects.
 - **Example**:
