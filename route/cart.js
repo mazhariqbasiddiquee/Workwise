@@ -8,7 +8,11 @@ const {Seller}=require("../module/seller")
 cartRouter.get("/",authorisation("buyer"),async(req,res,next)=>{
     try{
       
-        let data=await Cart.findAll()
+        let data=await Cart.findAll({
+            where:{
+                userid:req.body.userid
+            }
+        })
         res.status(200).json({msg:data})
     }catch(err){
          next(err)
